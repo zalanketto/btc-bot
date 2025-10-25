@@ -28,5 +28,9 @@ async def on_ready():
             print(f"Hiba: {e}")
         await asyncio.sleep(60)  # frissítés 60 másodpercenként
 
+import os
+TOKEN = os.getenv("TOKEN")
 client.run(TOKEN)
+
+
 
